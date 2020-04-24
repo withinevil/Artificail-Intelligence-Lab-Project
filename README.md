@@ -1,11 +1,26 @@
-# search_methods
-Depth First Search, Breadth First Search and Iterative Deepening Search
+Artificial Intelligence Project Report with Code and Output
 
-data.txt is the map of Romania, example taken from Russell and Norvig's Artificial Intelligence, 3rd edition.
-It each line in data.txt consists of cityA, cityB and cost between them, seperated by comma.
-The main repository consists of Search.py which has all three implementations.
+Appling all Search Algorithm in Pakistan Map
 
-data repository consists of class used for object oriented approach of DFS, BFS and Iterative Search. It also consists of dict.py which takes the input from text file and creates graph in the form of dictionary.
+Objective:
+In the above given map of Pakistan, I will apply all the Search Algorithms for calculating the total cost from Karachi to Lahore.
+Algorithms:
 
-my_code repository consists of object oriented approaches of DFS, BFS and Iterative Deepening Search.
+•	Uniformed Cost Search
+•	Breadth for Search
+•	Depth for Search
+•	Greedy Search
+•	A* Search
 
+
+Languages:
+Python etc.
+
+
+Group Names and Student ID:
+Muhammad Talha Butt (13395)
+Syed Haider Ali Pirzada (13599)
+
+
+Software:
+Google Colab and PyCharm IDE etc.
