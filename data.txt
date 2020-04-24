@@ -1,0 +1,14 @@
+Karachi Quetta 70
+Karachi Nawabshah 190 
+Karachi Badin 200 
+Quetta Nawabshah 28 
+Quetta Muzaffargarh 115 
+Badin Khairpur 155 
+Nawabshah Khairpur 50 
+Khairpur Bahwalpur 90 
+Muzaffargarh Multan 90 
+Bahawalpur Multan 101 
+Bahawalpur Lahore 133 
+Multan Faisalabad 65 
+Multan Lahore 211 
+Faisalabad Lahore 71
