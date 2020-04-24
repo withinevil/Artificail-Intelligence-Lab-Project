@@ -1,0 +1,33 @@
+Map=[ [1,'Karachi',0,'Karachi'],[2,'Karachi',70,'Quetta'],[3,'Karachi',200,'Badin'],[4,'Karachi',190,'Nawabshah'],
+  [5,'Quetta',151,'Muzaffargarh'],[6,'Quetta',28,'Nawabshah'],[7,'Badin',155,'Khairpur'],[8,'Muffargarh',90,'Multan'],
+  [9,'Nawabshah',50,'Khairpur'],[10,'Khairpur',90,'Bahawalpur'],[11,'Bahawalpur',101,'Multan'],
+  [12,'Bahawalpur',133,'Lahore'],[13,'Multan',65,'Faisalabad'],[14,'Multan',211,'Lahore'],
+  [15,'Faisalabad',71,'Lahore']]
+Solved=0
+Fringe=[ Map[0] ]
+count=0
+Current='Karachi'
+while(Solved!=1):
+    print('Iteration Number:',count)
+    print('Fringe: ', Fringe)
+
+    for k in range(len(Fringe)):
+        if(Fringe[k][1]==Current):
+            val=k    
+    dis=[Fringe[val][2],val]
+    for j in range(len(Fringe)):
+        if(Fringe[j][2]<dis[0] and Fringe[j][1]==Current):
+            dis=[Fringe[j][2],j]
+    OnExpand=Fringe.pop(dis[1])
+    Current=OnExpand[3]
+    print('Shortest Selected Distance:' , dis[1])
+    print('On Expand:', OnExpand)
+    print('Current: ', Current)
+    if(Current=='Lahore'):
+        Solved=1
+        print('Destination Reached!')
+    else:
+        for i in range(len(Map)):
+            if(Map[i][1]==Current and Map[i][3]!=Current):
+                Fringe.insert(1,Map[i])
+    count=count+1
